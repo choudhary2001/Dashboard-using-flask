@@ -14,17 +14,17 @@ import os
 from flask_login import LoginManager, current_user, login_user, logout_user, login_required
 
 class ReCaptha():
-    SECRET_KEY = '6Lc5t1sgAAAAAMCBMIJqO4Joz9VHEtzjY9cMbnJd' 
+    SECRET_KEY = 'your google recaptcha private key' 
     RECAPTCHA_USE_SSL= False
-    RECAPTCHA_PUBLIC_KEY = '6Lc5t1sgAAAAAHUCIJ94CBI81bsN5_QknT2MuTwk'
-    RECAPTCHA_PRIVATE_KEY = '6Lc5t1sgAAAAAMCBMIJqO4Joz9VHEtzjY9cMbnJd'
+    RECAPTCHA_PUBLIC_KEY = 'your google recaptcha public key'
+    RECAPTCHA_PRIVATE_KEY = 'your google recaptcha private key'
     RECAPTCHA_DATA_ATTRS = {'theme': 'light'}
 
 
 
 
 def is_human(captcha_response):
-    secret = "6Lc5t1sgAAAAAMCBMIJqO4Joz9VHEtzjY9cMbnJd"
+    secret = "your google recaptcha private key"
     payload = {'response': captcha_response, 'secret': secret}
     response = requests.post("https://www.google.com/recaptcha/api/siteverify", data=payload)
     response_text = json.loads(response.text)
