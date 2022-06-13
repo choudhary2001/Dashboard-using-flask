@@ -1,0 +1,82 @@
+{% extends 'base.html' %} 
+{% block title %} Edit{% endblock %}
+{% block style %}
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    background: #6ea0e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+  .message {
+    width: 450px;
+    height: auto;
+    background: white;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+</style>
+{% endblock %} {% block content %}
+<div class="message" id="message">
+  <form
+    action="/edit/edit_data/{{data.id}}"
+    method="POST"
+    enctype="multipart/form-data"
+  >
+    <div class="form-group">
+      <input
+        class="form-control"
+        name="image"
+        placeholder="picture"
+        type="file" required
+      />
+      <br />
+      <label>Name</label>
+      <br />
+      <input class="form-control" name="name" placeholder="Name" type="text" required/>
+      <br />
+      <label>Description</label>
+      <br />
+      <input
+        class="form-control"
+        name="desc"
+        placeholder="Description"
+        type="text" required
+      />
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
+{% endblock %}
+
+{% block sccript %}
+
+
+<!--   Core JS Files   -->
+<script src="../../static/js/core/popper.min.js"></script>
+<script src="../../static/js/core/bootstrap.min.js"></script>
+<script src="../../static/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="../../static/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="../../static/js/plugins/chartjs.min.js"></script>
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../../static/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+
+{% endblock %}
