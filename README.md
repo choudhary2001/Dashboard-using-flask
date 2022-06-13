@@ -56,6 +56,7 @@ Reference
 Offical Website
 
 Flask
+
 Flask Extension
 Flask restplus
 Flask-SQLalchemy
@@ -70,8 +71,11 @@ Wiki Page
 
 Changelog
 Version 2.3 : add dockerfile
+
 Version 2.2 : add ESDAO module
+
 Version 2.1 : add OAuth extension: FLASK-OAuth, and google oauth example
+
 Version 2.0 : add SQL ORM extension: FLASK-SQLAlchemy
 Version 1.1 : update nosetest
 Version 1.0 : basic flask-example with Flask-Restplus, Flask-Tesintg
