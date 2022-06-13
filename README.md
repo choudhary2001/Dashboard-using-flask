@@ -46,7 +46,8 @@ $ gunicorn -w 4 -b 127.0.0.1:5000 run:app
 ![image](https://user-images.githubusercontent.com/54638339/173277939-bff3cced-c734-49bb-abaa-b6b8f3a0d514.png)
 ![image](https://user-images.githubusercontent.com/54638339/173277993-4ca23f93-58f3-40ff-a919-f2db26f92f62.png)
 ![image](https://user-images.githubusercontent.com/54638339/173278035-b436debc-da86-4894-9ace-318722cfa513.png)
-![image](https://user-images.githubusercontent.com/54638339/173278111-fc94bc7d-1ad6-46ac-b84f-31c787defa3f.png)
+![image](https://user-images.githubusercontent.com/54638339/173279070-c4409b82-ca32-4b66-b31c-1dafef3f0b7f.png)
+
 ![image](https://user-images.githubusercontent.com/54638339/173278749-d871b5d8-bee0-4aba-9126-821e6fc95282.png)
 
 
