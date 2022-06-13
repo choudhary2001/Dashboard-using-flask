@@ -50,32 +50,3 @@ $ gunicorn -w 4 -b 127.0.0.1:5000 run:app
 
 ![image](https://user-images.githubusercontent.com/54638339/173278749-d871b5d8-bee0-4aba-9126-821e6fc95282.png)
 
-
-
-Reference
-Offical Website
-
-Flask
-
-Flask Extension
-Flask restplus
-Flask-SQLalchemy
-Flask-OAuth
-elasticsearch-dsl
-gunicorn
-Tutorial
-
-Flask Overview
-In Flask we trust
-Wiki Page
-
-Changelog
-Version 2.3 : add dockerfile
-
-Version 2.2 : add ESDAO module
-
-Version 2.1 : add OAuth extension: FLASK-OAuth, and google oauth example
-
-Version 2.0 : add SQL ORM extension: FLASK-SQLAlchemy
-Version 1.1 : update nosetest
-Version 1.0 : basic flask-example with Flask-Restplus, Flask-Tesintg
