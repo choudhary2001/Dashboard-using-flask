@@ -1,23 +1,32 @@
 # Dashboard-using-flask
 
 Installation
+
 Install with pip:
 
 $ pip install -r requirements.txt
+
 Flask Application Structure
 
 
 Flask Configuration
+
 Example
+
 app = Flask(__name__)
+
 app.config['DEBUG'] = True
+
 Configuring From Files
+
 Example Usage
 app = Flask(__name__ )
 cfg example
 
 ##Flask settings
+
 DEBUG = True  # True/False
+
 TESTING = False
 
 
@@ -26,20 +35,28 @@ TESTING = False
 
 
 Run Flask
+
 Run flask for develop
-$ python webapp/run.py
+
+$ python app.py
+
 In flask, Default port is 5000
 
-Swagger document page: http://127.0.0.1:5000/api
+ http://127.0.0.1:5000/
 
 Run flask for production
+
 ** Run with gunicorn **
+
 
 In webapp/
 
+
 $ gunicorn -w 4 -b 127.0.0.1:5000 run:app
 
+
 -w : number of worker
+
 -b : Socket to bind
 
 ![image](https://user-images.githubusercontent.com/54638339/173277904-7b7f6e50-2aa5-41b8-8346-f6d8a101d513.png)
